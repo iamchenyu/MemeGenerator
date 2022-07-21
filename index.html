@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body class="ui container">
+    <h1>Meme Generator</h1>
+    <form class="ui form">
+      <div class="field">
+        <label for="image">Image URL</label>
+        <input type="url" id="image" name="image-url" required />
+      </div>
+      <div class="field">
+        <label for="topText">Top Text (optional)</label>
+        <input type="text" name="top-text" id="topText" />
+      </div>
+      <div class="field">
+        <label for="bottomText">Bottom Text (optional)</label>
+        <input type="text" name="bottom-text" id="bottomText" />
+      </div>
+      <button class="ui button" type="submit" id="submit">
+        Create your own meme!
+      </button>
+    </form>
+    <div id="memeShowcase"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
